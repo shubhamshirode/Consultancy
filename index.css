@@ -217,7 +217,7 @@ main{
     display: grid;
     gap: 1rem;
     width: 100%;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
     margin: 0 auto;
 }
 .sect3_box_contain{
@@ -576,8 +576,13 @@ hr{
 }
 /* Mobail */
 @media screen and (max-width:425px) {
+    main{
+        padding: 1rem;
+        width: 100%;
+    }
     header{
         height: auto;
+        /* margin: -1rem; */
     }
     .Mobail_menu{
         display: block;
@@ -589,6 +594,9 @@ hr{
     .nd1{
         background: none;
         display: flex;
+    }
+    .nd1 button{
+        padding: 0.2rem 0;
     }
     .nd1 span{
         display: none;
@@ -614,6 +622,10 @@ hr{
     }
     .section3{
         height: auto;
+    }
+    .sect3_box{
+        grid-template-columns: auto ;
+        grid-row: 3;
     }
     .section4{
         height: auto;
@@ -656,7 +668,7 @@ hr{
         display: grid;
         grid-template-columns: auto;
         align-items: center;
-        gap: 1rem;
+        gap: 3rem;
     }
     .section8 img{
         height: 100%;
@@ -669,11 +681,18 @@ hr{
     .footer{
         height: auto;
     }
-    .sect3_box{
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-row: 3;
+    
+    .footer_div1{
+        padding: 1rem;
     }
+    .footer_div1 li{
+        text-align: left;
+    }
+    .footer_div1 div{
+        padding: 0 1rem;
+    text-align: center;
+    }
+    
 }
 
 
