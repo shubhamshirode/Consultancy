@@ -696,9 +696,7 @@ hr{
         margin: 1rem 2rem;
     text-align: center;
     }
-    .popular_link{
-        display: none;
-    }
+    
     .iconSocial{
         display: grid;
         grid-template-columns: auto auto auto auto;
