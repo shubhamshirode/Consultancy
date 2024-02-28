@@ -95,15 +95,14 @@ nav li{
 .dropdown_content{
     display: none;
     position: absolute;
-    margin: 25px 0px 0 -15px;
-    width: 5rem;
-    background:local;
+    margin: 25px 0px 0 -25px;
+    width: auto;
+    background-color:white;
 }
 .dropdown_content a{
-    color: white;
-    display:inline;
+    display: flex;
     text-decoration: none;
-    width: 10rem;
+    width: 100%;
 }
 .dropdown:hover .dropdown_content{
     display: inline;
@@ -171,9 +170,10 @@ main{
 }
 .sect2_box1 button{
     background-color: rgb(240, 89, 65,0.9);
-    border-radius: 1.5rem;
+    border-radius: 10px;
     color: white;
     margin-top: 1rem;
+    width: 40%;
 }
 .sect2_box2{
     width: 50%;
@@ -582,7 +582,6 @@ hr{
     }
     header{
         height: auto;
-        /* margin: -1rem; */
     }
     .Mobail_menu{
         display: block;
@@ -683,16 +682,29 @@ hr{
     }
     
     .footer_div1{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
         padding: 1rem;
     }
+    
     .footer_div1 li{
         text-align: left;
     }
     .footer_div1 div{
-        padding: 0 1rem;
+        /* padding: 0 1rem; */
+        margin: 1rem 2rem;
     text-align: center;
     }
-    
+    .popular_link{
+        display: none;
+    }
+    .iconSocial{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid: 2;
+        gap: 0.5rem;
+    }
 }
 
 
